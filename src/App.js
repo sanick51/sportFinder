@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from "./components/Header";
 import {DataProvider} from './context/DataProvider';
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 import Pages from "./components/Page.js";
 import { ProductosList } from 'components/page/productos';
 
@@ -13,7 +13,6 @@ function App() {
       <Router>
       <Header />
       <Pages />
-      <ProductosList></ProductosList>
       </Router>
     </div>
     </DataProvider>

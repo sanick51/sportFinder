@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import DetailProductPage from 'components/ProductPage/DetailProductPage';
 
 export const ProductoItem = ({title, image, category, price, id}) => {
   return (
@@ -16,7 +17,10 @@ export const ProductoItem = ({title, image, category, price, id}) => {
       </div>
       <div className="bottom">
         <div>
-        <Link to={`/producto/${id}`} className="btn">Ver detalles</Link>
+        <Link to={{
+          pathname: `/producto/${id}`,
+          
+        }} className="btn">Ver detalles</Link>
         </div>
       </div>
     </div>
