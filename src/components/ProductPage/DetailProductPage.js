@@ -1,5 +1,6 @@
 import React , {useEffect} from 'react'
 import Data from "Data2.js";
+
 export default function DetailProductPage() {
 
    

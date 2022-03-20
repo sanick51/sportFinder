@@ -2,6 +2,7 @@ import React, {useContext, useEffect, useState} from 'react'
 import { DataContext } from "context/DataProvider";
 import { useParams } from "react-router-dom";
 import { ProductoItem } from "./ProductoItem";
+import { Header } from "../../Header";
 
 export const ProductosDetalles = () => {
   const value = useContext(DataContext);
@@ -38,6 +39,7 @@ export const ProductosDetalles = () => {
   return (
     <>
     {
+      
         <div className="detalles">
           <h2>{detalle.title}</h2>
           

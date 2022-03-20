@@ -23,7 +23,7 @@ export const Header = () => {
     </div>
       <ul>
         <li>
-          <Link to="/">Inicio</Link>
+          <Link to="/Login">Iniciar sesión</Link>
         </li>
         <li>
           <Link to="/productos">Sobre nosotros</Link>
