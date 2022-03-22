@@ -7,6 +7,7 @@ import CreateUser from "./CreateUser/CreateUser";
 export default function Page() {
   return (
       <Routes>
+        	<Route path="/" exact element={<ProductosList/>} />
 				<Route path="/home" exact element={<ProductosList/>} />
 				<Route path="/productos" exact element={<ProductosList/>} />
         <Route path="/producto/:id" exact element={<ProductosDetalles/>} />

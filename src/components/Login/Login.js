@@ -8,6 +8,9 @@ import Item from './components/Item';
 import Button from '../commons/RegularButton';
 import ModalError from '../commons/ModalError';
 import { makeStyles } from '@material-ui/core/styles';
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -78,11 +81,33 @@ const Login = () => {
         }
     }
 
+    const navigate = useNavigate();
+
+    function handleSubmit(username , password){
+        fetch('http://127.0.0.1:8000/login',{
+            method:'POST',
+            body:JSON.stringify({
+                userName:username,  
+                password:password,
+            })
+        })
+        .then(res=>res.json())
+        .then((result)=>{
+            if(result === "Inicio de sesión exitoso"){
+                navigate('/home');
+            }else{
+                alert(result);
+            }
+           
+        }
+       )
+    }
+
     function handleOnClick() {
-        setIsLoading(true);
         let login = { username, password }
+        
         if(login) {
-            ifMatch(username, password)
+            handleSubmit(username , password);
         }
     }
 
@@ -120,7 +145,7 @@ const Login = () => {
                                     <Item text='Usuario' />
                                     <Input
                                         attribute={{
-                                            name: 'user',
+                                            name: 'username',
                                             inputType: 'text',
                                             ph: 'Ingrese correo'
                                         }}
