@@ -634,7 +634,7 @@ input:-moz-placeholder {
     outline: none;
     border-radius: 35px;
     font-family: 'Quicksand';
-    font-size: 16px;
+    font-size: 20px;
     color: #ffffff;
     font-weight: 400;
 }
@@ -720,15 +720,13 @@ input:-moz-placeholder {
         width: 40%;
         height: auto;
         margin: auto auto;
-        padding: 0 0 30px 0;
-        box-shadow: 5px 15px 20px 0 rgba(0, 0, 0, 0.16);
+        padding: 0px 0 20px 0;
+        box-shadow: 5px 15px 20px 15px rgba(0, 0, 0, 0.16);
         border-radius: 10px;
         box-sizing: content-box;
         background: #ffffff
     }
     .LoginContent {
-     background-color: #f4eb97;
-        /*background-image:  linear-gradient(90deg, rgba(117,70,138,1) 0%, rgba(117,70,138,0) 100%, rgba(255,255,255,1) 100%), url('../../assets/images/appBackground.jpg');*/
         display: flex;
         justify-content: center;
         background-size: cover;
@@ -743,15 +741,15 @@ input:-moz-placeholder {
         width: 100%;
     }
     .LabelItemComponent {
-        margin-top: 10px
+        margin-top:1px
     }
     .LoginLower {
         width: 85%;
-        padding: 10px 0 0 10px
+        padding: -15px 30px 10px 30px;
     }
     .ItemUserLogin {
         width: 100%;
-        color: aqua;
+        
     }
 }
 
@@ -765,53 +763,36 @@ input:-moz-placeholder {
 
 .formCreateUser {
    
-    width: 75%;
-    margin: auto;
+    width: 70%;
+     margin: auto;
     align-items:center;
     background-size: cover;
     justify-content: center;
-    padding: 0 30px 10px 30px;
-    box-shadow: 5px 15px 20px 0 rgba(0, 0, 0, 0.16);
+    padding: 0px 30px 10px 30px;
+    box-shadow: 5px 15px 20px 15px rgba(0, 0, 0, 0.16);
+    flex-direction: column-reverse;
 
 }
 
 @media screen and (min-width: 1030px) {
     .createUserContent {
         width: 40%;
-        height: 100%;
+        height: 60%;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         background-size: cover;
-        flex-direction: column;
-        
+        flex-direction: column-reverse;
+        color: #8dd453;
+        padding: 130px 30px 10px 30px;
       
     }
     .CreateUserImg {
         display: none;
     }
-    .CreateUserContainer {
-       
-        position: absolute;
-
-
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        background-size: cover;
-        flex-direction: column-reverse;
-       /* flex-direction: row-reverse;*/
-       justify-content: center;
-       
-    }
-    .BackgroundWeb {
-        width: 60%;
-        height: 80%;
-        background-color: blueviolet;
-       /*background-image: linear-gradient(90deg, rgba(117,70,138,1) 0%, rgba(117,70,138,0) 100%, rgba(255,255,255,1) 100%), url('../../assets/images/appBackground.jpg');*/
-        background-size: cover;
-    } 
+   
+   
 }
 
 /* -------------MEDIA -------------*/

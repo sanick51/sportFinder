@@ -231,7 +231,7 @@ const CreateUser = () => {
                         }}>
                             <Link 
                             to='/login'
-                            style={{ color: '#734488' }}
+                            style={{ color: '#ff9b2f' }}
                             >
                                 <Item 
                                 text='Volver pagina login' />
